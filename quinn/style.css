@@ -1,0 +1,480 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* Main Color */
+:root {
+  --lightpurple: #02457a;
+  --poppins: 'Poppins', sans-serif;
+  --black: #000000;
+  --abril: 'Abril Fatface', cursive;
+  --lato:  'Lato', sans-serif;
+  --purple: #008bbe;
+  --darkgray: #02457a;
+  --white: #d7e6ee;
+  --lightgray: #97cadb;
+}
+::selection {
+  color: var(--lightpurple);
+  background: CornflowerBlue;
+  background-color: var(--black);
+}
+.nav-scrolled {
+  background:#d7e6ee !important;
+}
+/*Navbar*/
+.navbar{
+	font-family: var(--poppins);
+	background-color: #d7e6ee;
+}
+.navbar-toggler{
+	border: none !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar .container-fluid .navbar-item{
+	font-size: 28.5px;
+	letter-spacing: 2px;
+	font-weight: 550;
+	color: black;
+	text-decoration: none;
+}
+.navbar .container-fluid .span{
+	color: var(--purple)
+}
+.navbar .navbar-nav .nav-item a{
+	font-weight: 400;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: black;
+}
+.d-flex .btn{
+	font-size: 15px;
+	background-color: black;
+	border-radius: 50px;
+	color: var(--white);
+	text-transform: uppercase;
+	padding: 13px 19px;
+}
+.d-flex .btn:hover{
+	background-color: var(--purple);
+	color: var(--white);
+	transition: 0.5;
+}
+/*jumbotron*/
+.jumbotron .text{
+	padding-bottom: 6rem;
+}
+.jumbotron{
+	background-image: url(img/4.png) !important;
+	background-size: cover;
+	height: 100vh;
+	margin-top: -74px;	
+	border-image: auto;
+	background-position: center;
+}
+
+.jumbotron .text h1{
+	text-transform: capitalize;
+	font-family: var(--abril);
+	font-size: 75px;
+	color: black;
+	overflow: hidden;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+
+  49% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  99% {
+  	background-color: transparent;
+  }
+  100% {
+  	background-color: #ccc;
+  }
+}
+.jumbotron .text h1 .cursor{
+	display: inline-block;
+	background-color: #ccc;
+	margin-left: 0.1rem;
+	width: 3px;
+	animation: blink 1s infinite;
+}
+.jumbotron .text h1 .cursor .typing {
+	animation: none;
+}
+.jumbotron .text span{	
+	color: var(--purple);
+}
+
+
+/*About*/
+#about{
+	padding: 4rem 0;
+	background-image: url(img/2.png) !important;
+	background-size: cover;
+	height: 100vh;
+	margin-top: -74px;	
+	background-position: center;
+}
+
+.text-about{
+	padding-top: 5rem;
+}
+.text-about h1{
+	font-family: var(--abril);
+	font-size: 50px;
+	text-align: left;
+	padding-bottom: 20px;
+}
+.text-about h1:after{
+	content: '';
+	display: block;
+	border-bottom: 7px solid var(--purple);
+	width: 20%;
+	padding-bottom: 2px;
+	margin-bottom: -9px;
+}
+.text-about span{
+	color: var(--purple);
+}
+.text-about p{
+	font-family: var(--poppins);
+	font-size: 23px;
+	text-transform: none;
+}
+.about-img{
+	padding-top: 9rem;
+}
+
+
+/*skills&toools*/
+
+  
+ /* Styling untuk section #skills */
+#skills {
+	padding: 4rem 0;
+	background-image: url(img/3.png) !important;
+	background-size: cover;
+	height: 100vh;
+	margin-top: -74px;
+	background-position: center;
+	color: #333;
+  }
+  
+  /* Styling untuk judul */
+  .title-skills h1 {
+	font-family: var(--abril);
+	font-size: 50px;
+	padding-bottom: 2rem;
+	text-align: center;
+  }
+  
+  .title-skills h1 span {
+	color: var(--purple);
+  }
+  
+  .title-skills h1:after {
+	content: '';
+	display: block;
+	border-bottom: 7px solid var(--purple);
+	width: 8%;
+	margin: 0.5rem auto 0;
+  }
+  
+  /* Styling untuk container gambar dan teks */
+  .gambarr {
+	padding: 0 70px;
+  }
+  
+  .gambar-skills {
+	background-color: #97cadb;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	overflow: hidden; /* Sembunyikan konten yang melebihi kontainer */
+	height: auto;
+	max-height: calc(100vh - 10rem); /* Batas tinggi maksimum */
+	margin: 0 auto; /* Pusatkan kotak di tengah layar */
+	max-width: 90%; /* Membatasi lebar maksimum untuk keseimbangan kiri dan kanan */
+  }
+  
+  /* Styling untuk kolom dan teks */
+  .gambar-skills .col-lg-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	overflow: hidden; /* Sembunyikan konten yang melebihi kontainer */
+	height: 100%;
+	width: 100%; /* Pastikan kolom menggunakan lebar penuh */
+  }
+  
+  .gambar-skills h2 {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: normal;
+	max-width: 100%;
+	overflow: hidden; /* Sembunyikan teks yang melebihi kotak */
+	padding: 0 10px; /* Tambahkan padding untuk keseimbangan kiri dan kanan */
+  }
+  
+  /* Tambahan untuk styling gambar, jika ada */
+  .main-card img {
+	background-color: #85e1ff;
+	padding: 5px;
+	border-radius: 10px;
+	transition: filter 0.3s;
+  }
+  
+  .main-card img:hover {
+	filter: invert(15%);
+  }
+  
+  
+
+/*Promise*/
+#promise{
+	padding: 4rem 0;
+	background-image: url(img/.png);
+	background-size: cover;
+}
+.promise-title h1{
+	text-transform: capitalize;
+	font-family: var(--abril);
+	font-size: 50px;
+	text-align: left;
+	padding-bottom: 2rem;
+}
+.promise-title span{
+	color: var(--purple);
+}
+
+.card-body{
+	background-color: var(--white);
+}
+.datar-promise .isi-card{
+	padding-bottom: 2rem;
+}
+#promise .card{
+	border: 3px solid var(--lightpurple);
+	padding: 1rem 0.6rem 2rem 0.6rem;
+	font-family: var(--poppins);
+	width: 35rem;
+}
+#promise .card-title{
+	font-size: 28px;
+	text-transform: capitalize;
+}
+#promise .card-text{
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--purple);
+	font-weight: bold;
+}
+
+/* Section Gift */
+#gift {
+	padding: 4rem 0;
+	background-color: #f1f7f7;
+	text-align: center;
+	color: var(--abril);
+	background-image: url(img/GIFT.png);
+	background-size: cover;
+	background-position: center;
+  }
+  
+  #gift h1 {
+	font-family: var(--abril);
+	font-size: 50px;
+	margin-bottom: 20px;
+  }
+  
+  #gift span {
+	color: var(--purple);
+  }
+  
+  #gift .btn-open-gift {
+	margin-top: 20px;
+	padding: 15px 30px;
+	font-size: 20px;
+	border: none;
+	background-color: var(--purple);
+	color: var(--black);
+	border-radius: 50px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  #gift .btn-open-gift:hover {
+	background-color: var(--darkgray);
+  }
+  
+
+
+
+/* Footer */
+footer{
+	background-color: var(--purple);
+	font-size: 21px;
+}
+.footer a{
+	text-decoration: none;
+	font-family: var(--poppins);
+}
+
+
+
+
+/*deskop version biasa*/
+@media (min-width: 992px) {	
+	/*navbar*/
+	.navbar{
+		padding: 0.5rem 3rem;
+		background: transparent;
+	}
+	.navbar .navbar-nav .nav-item{
+		padding: 3px 10px;
+	}
+	.navbar .navbar-nav .nav-item a{
+		background: linear-gradient(to right, var(--purple), var(--lightpurple));
+		background-size: 200%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		transition: 0.5s ease-out;
+	}
+	.navbar .navbar-nav .nav-item a:hover{
+		background-position: -100%;
+	}
+	/* jumbotron */
+	.jumbotron .text {
+		padding-left: 4rem;
+		top: 36%;
+		position: absolute;
+	}
+	.jumbotron .text h2{
+		text-transform: uppercase;
+		font-family: var(--lato);
+		font-size: 30px;
+		font-weight: 300;
+		padding-top: 0;
+	}
+	.jumbotron .text h1{
+		text-transform: capitalize;
+		font-family: var(--abril);
+		font-size: 85px;
+		color: black;
+	}
+	.jumbotron .text span{
+		color: var(--purple);
+	}
+	.jumbotron .text h3{
+		text-transform: capitalize;
+		font-family: var(--poppins);
+		font-size: 26px;
+		font-weight: 400;
+		display: flex;
+		padding-bottom: 25px;
+	}
+	.jumbotron .text h3::after{
+		content: '';
+		display: block;
+		border-right: 7px solid var(--lightpurple);
+		width: 4%;
+	}
+	.jumbotron .sosial-media a{
+		text-decoration: none;
+		color: var(--lightgray);
+		padding-right: 25px;
+		width: 70px;
+		height: 70px;
+	}
+	.jumbotron .sosial-media a:hover{
+		color: var(--purple);
+	}
+	/*About*/
+	.text-about{
+		padding: 10rem 0 0 4rem;
+	}
+	.text-about h1{
+		font-size: 65px;
+	}
+	.text-about span{
+		color: var(--purple);
+	}
+	.text-about p{
+		font-size: 25px;
+	}
+	#about{
+		background-image: url(img/);
+		background-size: cover;
+		height: auto;
+	}
+	.about-img{
+		padding-top: 5rem;
+	}
+	/*project*/
+	#carouselExampleFade .carousel-inner .carousel-item img{
+		height: 80vh;
+	} 
+	.title-project h1{
+		font-size: 65px;
+		padding-left: 4rem; 
+	}
+	/*skills&tools*/
+	#skills{
+		background-image: url(img/SKILLS.png);
+		background-size: cover;
+
+	}
+	.title-skills h1{
+		padding-left: 4rem;
+		font-size: 65px;
+	}
+	.gambar-skills{
+		padding-left: 4rem;
+	}
+	/*promise*/
+	#promise{
+		background-image: url(img/4.png);
+		background-size: cover;
+	}
+	.promise-title h1{
+		font-size: 65px;
+		text-align: center;
+	}
+	#promise .datar-promise{
+		margin: 0 4.5rem;
+	}
+	/*testimonial*/
+	#testimonial .one{
+		padding-top: 6rem;
+		padding-left: 3rem;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;  
+	}
+	#testimonial .two{
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;  
+	}
+	.contact-title  h1{
+		font-size: 65px;
+	}
+}
+
